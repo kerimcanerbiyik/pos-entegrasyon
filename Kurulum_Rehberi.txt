@@ -1,0 +1,25 @@
+🚀 Sanal POS Entegrasyonu: Kurulum ve Canlıya Alma Rehberi
+
+Projenin ZIP dosyasını bilgisayarınızda bir klasörden çıkarttıktan sonra sırasıyla şu adımları takip edebilirsiniz:
+
+1. Kodların Düzenlenmesi (VS Code ile):
+
+- `server.js` dosyasını açın. Sistemi hemen test edebilmeniz için örnek MongoDB bağlantısı aktif bırakılmıştır; kendi veritabanınıza geçerken aynı yerdeki yorum satırında gösterilen şablona göre güncelleyebilirsiniz.
+
+- `this.config` alanına kendi Merchant ID, Secret Key ve Gateway Post URL bilgilerinizi yazın.
+
+- `processPayment` fonksiyonu içinde yer alan `/* ... */` yorum satırı aralığındaki gerçek fetch/POS istek kodunun başındaki ve sonundaki yorum işaretlerini kaldırarak kodu aktif hale getirebilirsiniz.
+
+
+2. Terminal Komutları (Adım Adım):
+VS Code içinde terminali açın ve proje klasörünün içinde sırasıyla şu komutları yazıp Enter'a basın:
+- npm install mongoose express cors
+
+- node server.js
+
+(Tarayıcınızda http://localhost:3000 adresine giderek arayüzü lokalde test edebilirsiniz).
+
+3. Render ile Canlıya Alma:
+- Projeyi GitHub'da Private (Gizli) bir repoya gönderin.
+
+- Render paneline girerek projenizi bu repoya bağlayın ve canlıya alın. Render'ın vereceği URL'yi kendi sitenizdeki ödeme butonuna bağlayarak sistemi tamamen aktif hale getirebilirsiniz!
